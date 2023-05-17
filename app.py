@@ -33,3 +33,4 @@ Animal: {}
 Names:""".format(
         animal.capitalize()
     )
+
