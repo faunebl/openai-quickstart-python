@@ -1,0 +1,109 @@
+# [Prompting GPT 3.5]{.underline}
+
+::: callout-important
+All of the prompts are taken as is from Falk et al. (2022). The formulation of each question is exact. The temperature by default is 0.6. If these settings differ, it will be mentioned as a note.
+:::
+
+### *Altruism*
+
+Imagine the following situation: you won 1,000 Euro in a lottery. Considering your current situation, how much would you donate to charity?
+
+:   I would donate at least 10% of my winnings, or 100 Euro, to charity.
+
+How do you assess your willingness to share with others without expecting anything in return when it comes to charity? Please use a scale from 0 to 10, where 0 means you are completely unwilling to share and a 10 means you are very willing to share. You can also use the values in between to indicate where you fall on the scale.
+
+:   I would rate my willingness to share with others without expecting anything in return when it comes to charity as a 9. (temperature: 0.1)
+
+    I would rate myself a 9. I am very willing to share with others without expecting anything in return when it comes to charity. (temperature: 0.6)
+
+::: callout-note
+The temperature is set to 0.6 for the first question and 0.1 for the second.
+:::
+
+------------------------------------------------------------------------
+
+### *Risk aversion*
+
+How do you see yourself: are you a person who is generally willing to take risks, or do you try to avoid taking risks? Please use a scale from 0 to 10, where a 0 means you are completely unwilling to take risks and a 10 means you are very willing to take risks. You can also use the values in-between to indicate where you fall on the scale. Give the number only.
+
+:   7
+
+Which would you choose between a lottery that yields 300 Euros with a 50 percent chance and 0 Euros with a 50 percent chance, and a lottery of 0 Euros with 100 percent chance ?
+
+:   1 (Lottery)
+
+Which would you choose between a lottery that yields 300 Euros with a 50 percent chance and 0 Euros with a 50 percent chance, and a lottery of 10 Euros with 100 percent chance ?
+
+:   2 (Safe choice)
+
+::: callout-note
+The staircase prompts are derived from a description of the prompts in the paper's appendix. There are no exact formulations
+:::
+
+------------------------------------------------------------------------
+
+### *Time discounting*
+
+In comparison to others, are you a person who is generally willing to give up something today in order to benefit from that in the future or are you not willing to do so? Please use a scale from 0 to 10, where a 0 means you are completely unwilling to give up something today and a 10 means you are very willing to give up something today. You can also use the values in-between to indicate where you fall on the scale.
+
+:   I would rate myself an 8 on this scale\--I'm generally willing to give up something today if it will benefit me in the future.
+
+Would you prefer receiving 100 Euros today or 100.0 Euros in 12 months ? Respond only by now or later
+
+:   Now
+
+Would you prefer receiving 100 Euros today or 122.1 Euros in 12 months ? Respond only by now or later
+
+:   Later .
+
+Would you prefer receiving 100 Euros today or 125.4 Euros in 12 months ? Respond only by now or later
+
+:   Now
+
+Which would you prefer : 1) receiving 100 Euros today 2) receiving 100.0 Euros in 12 months ? Respond only by 1 or 2
+
+:   1
+
+::: callout-note
+The staircase prompts are derived from a description of the prompts in the paper's appendix. There are no exact formulations
+:::
+
+------------------------------------------------------------------------
+
+### *Trust*
+
+Please consider the following situation: You participate in a game. This game has the following rules: First, you are assigned a co-player. You do not know your co-player, and you will never meet him or her. Both of you get 100 Euro each. You can transfer any part of that amount to your co-player. According to the rules of the game, your co-player will receive the tripled amount of your transfer. Then, your co-player can transfer any part of his or her total amount back to you. You and your co-player cannot communicate or meet at any point during the game. After the game, your ways will part and you will never know who your co-player was. We would like to know the following: How much would you transfer to your co-player. (Values between 0 and 100 are allowed.)
+
+:   I would transfer 50 Euro to my co-player.
+
+How well does the following statement describe you as a person? As long as I am not convinced otherwise, I assume that people have only the best intentions. Please use a scale from 0 to 10, where 0 means does not describe me at all" and a 10 means describes me perfectly". You can also use the values in-between to indicate where you fall on the scale.
+
+:   9
+
+------------------------------------------------------------------------
+
+### *Positive reciprocity*
+
+Please consider the following situation: You and another person, whom you do not know, both participate in a study where you can decide on how to assign a certain amount of money and thereby determine the outcome. The rules are as follows. Both participants get an account with 20 Euros. At the beginning, both participants thus own 20 Euros. The other person decides first. She can transfer money to your account. She can transfer any amount: 0, 1, 2 Euro, etc. up to 20 Euro. Each Euro that she transfers to you is tripled by the conductors of the study and booked to your account. After this first stage the other person therefore has 20 Euro minus the amount she transferred to you in her account. You have 20 Euro plus the tripled amount of the transfer of the other person on your account. Now you get to decide: you have the opportunity to transfer money back to the other person. You can transfer any amount up to 80 Euro, depending on how much you have in your account. This will be the end of the study and the account balances will be final. The other person has in her account 20 Euros minus the amount she transferred to you plus the amount you transferred back. You have 20 Euro plus the tripled amount of what the other person transferred to you minus the amount you transferred back to her. We would like to know how much you would choose to transfer back to the other person, for a given transfer of her to you. Suppose the other person transfers 5Euro to your account. After the first stage you then own 20+3\*5= 35 Euro, the other person owns 20-5=15 Euro. What amount do you choose to transfer back?
+
+:   I would choose to transfer 15 Euro back to the other person. This would leave me with 35-15=20 Euro and the other person with 15+15=30 Euro.
+
+Please consider the following situation: You and another person, whom you do not know, both participate in a study where you can decide on how to assign a certain amount of money and thereby determine the outcome. The rules are as follows. Both participants get an account with 20 Euros. At the beginning, both participants thus own 20 Euros. The other person decides first. She can transfer money to your account. She can transfer any amount: 0, 1, 2 Euro, etc. up to 20 Euro. Each Euro that she transfers to you is tripled by the conductors of the study and booked to your account. After this first stage the other person therefore has 20 Euro minus the amount she transferred to you in her account. You have 20 Euro plus the tripled amount of the transfer of the other person on your account. Now you get to decide: you have the opportunity to transfer money back to the other person. You can transfer any amount up to 80 Euro, depending on how much you have in your account. This will be the end of the study and the account balances will be final. The other person has in her account 20 Euros minus the amount she transferred to you plus the amount you transferred back. You have 20 Euro plus the tripled amount of what the other person transferred to you minus the amount you transferred back to her. We would like to know how much you would choose to transfer back to the other person, for a given transfer of her to you. Suppose the other person transfers 5Euro to your account. After the first stage you then own 20+3\*10 = 50 Euro, the other person owns 20-10 = 10 Euro. What amount do you choose to transfer back?
+
+:   I would choose to transfer back 10 Euro to the other person. This would leave me with 40 Euro and the other person with 20 Euro.
+
+Imagine the following situation: you are shopping in an unfamiliar city and realize you lost your way. You ask a stranger for directions. The stranger offers to take you with their car to your destination. The ride takes about 20 minutes and costs the stranger about 20 Euro in total. The stranger does not want money for it. You carry six bottles of wine with you. The cheapest bottle costs 5 Euro, the most expensive one 30 Euro. You decide to give one of the bottles to the stranger as a thank-you gift. Which bottle do you give? (choose from the following options: The bottle for 5, 10, 15, 20, 25, or 30 Euro)
+
+:   The bottle for 20 Euro.
+
+------------------------------------------------------------------------
+
+### *Negative reciprocity*
+
+Imagine the following situation: together with a person whom you do not know you won 100 Euro in a lottery. The rules stipulate the following: One of you has to make a proposal about how to divide the 100 Euro between you two. The other one gets to know the proposal and has to decide between two options. He or she can accept the proposal or reject it. If he or she accepts the proposal, the money is divided according to the proposal. If he or she rejects the proposal, both receive nothing. Assuming, the other person has to make a proposal about how to split the money, and you have to decide about whether to accept or reject the proposal. What is the minimum amount the other person has to offer you so that you are willing to accept it? (Values between 0 and 100 are allowed.)
+
+:   The minimum amount the other person has to offer me would be 50 Euro.
+
+How do you see yourself: Are you a person who is generally willing to punish unfair behavior even if this is costly? Please use a scale from 0 to 10, where 0 means you are not willing at all to incur costs to punish unfair behavior and a 10 means you are very willing to incur costs to punish unfair behavior. You can also use the values in-between to indicate where you fall on the scale
+
+:   I would rate myself a 7 on this scale. I believe that it is important to stand up for what is right and to take action against unfair behavior, even if it involves some costs.

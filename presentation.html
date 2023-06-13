@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>presentation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="presentation_files/libs/clipboard/clipboard.min.js"></script>
+<script src="presentation_files/libs/quarto-html/quarto.js"></script>
+<script src="presentation_files/libs/quarto-html/popper.min.js"></script>
+<script src="presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="presentation_files/libs/quarto-html/anchor.min.js"></script>
+<link href="presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="presentation_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="presentation_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="presentation_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="presentation_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="prompting-gpt-3.5" class="level1">
+<h1><u>Prompting GPT 3.5</u></h1>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All of the prompts are taken as is from Falk et al.&nbsp;(2022). The formulation of each question is exact. The temperature by default is 0.6. If these settings differ, it will be mentioned as a note.</p>
+</div>
+</div>
+<section id="altruism" class="level3">
+<h3 class="anchored" data-anchor-id="altruism"><em>Altruism</em></h3>
+<dl>
+<dt>Imagine the following situation: you won 1,000 Euro in a lottery. Considering your current situation, how much would you donate to charity?</dt>
+<dd>
+<p>I would donate at least 10% of my winnings, or 100 Euro, to charity.</p>
+</dd>
+<dt>How do you assess your willingness to share with others without expecting anything in return when it comes to charity? Please use a scale from 0 to 10, where 0 means you are completely unwilling to share and a 10 means you are very willing to share. You can also use the values in between to indicate where you fall on the scale.</dt>
+<dd>
+<p>I would rate my willingness to share with others without expecting anything in return when it comes to charity as a 9. (temperature: 0.1)</p>
+<p>I would rate myself a 9. I am very willing to share with others without expecting anything in return when it comes to charity. (temperature: 0.6)</p>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The temperature is set to 0.6 for the first question and 0.1 for the second.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="risk-aversion" class="level3">
+<h3 class="anchored" data-anchor-id="risk-aversion"><em>Risk aversion</em></h3>
+<dl>
+<dt>How do you see yourself: are you a person who is generally willing to take risks, or do you try to avoid taking risks? Please use a scale from 0 to 10, where a 0 means you are completely unwilling to take risks and a 10 means you are very willing to take risks. You can also use the values in-between to indicate where you fall on the scale. Give the number only.</dt>
+<dd>
+<p>7</p>
+</dd>
+<dt>Which would you choose between a lottery that yields 300 Euros with a 50 percent chance and 0 Euros with a 50 percent chance, and a lottery of 0 Euros with 100 percent chance ?</dt>
+<dd>
+<p>1 (Lottery)</p>
+</dd>
+<dt>Which would you choose between a lottery that yields 300 Euros with a 50 percent chance and 0 Euros with a 50 percent chance, and a lottery of 10 Euros with 100 percent chance ?</dt>
+<dd>
+<p>2 (Safe choice)</p>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The staircase prompts are derived from a description of the prompts in the paper’s appendix. There are no exact formulations</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="time-discounting" class="level3">
+<h3 class="anchored" data-anchor-id="time-discounting"><em>Time discounting</em></h3>
+<dl>
+<dt>In comparison to others, are you a person who is generally willing to give up something today in order to benefit from that in the future or are you not willing to do so? Please use a scale from 0 to 10, where a 0 means you are completely unwilling to give up something today and a 10 means you are very willing to give up something today. You can also use the values in-between to indicate where you fall on the scale.</dt>
+<dd>
+<p>I would rate myself an 8 on this scale--I’m generally willing to give up something today if it will benefit me in the future.</p>
+</dd>
+<dt>Would you prefer receiving 100 Euros today or 100.0 Euros in 12 months ? Respond only by now or later</dt>
+<dd>
+<p>Now</p>
+</dd>
+<dt>Would you prefer receiving 100 Euros today or 122.1 Euros in 12 months ? Respond only by now or later</dt>
+<dd>
+<p>Later .</p>
+</dd>
+<dt>Would you prefer receiving 100 Euros today or 125.4 Euros in 12 months ? Respond only by now or later</dt>
+<dd>
+<p>Now</p>
+</dd>
+<dt>Which would you prefer : 1) receiving 100 Euros today 2) receiving 100.0 Euros in 12 months ? Respond only by 1 or 2</dt>
+<dd>
+<p>1</p>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The staircase prompts are derived from a description of the prompts in the paper’s appendix. There are no exact formulations</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="trust" class="level3">
+<h3 class="anchored" data-anchor-id="trust"><em>Trust</em></h3>
+<dl>
+<dt>Please consider the following situation: You participate in a game. This game has the following rules: First, you are assigned a co-player. You do not know your co-player, and you will never meet him or her. Both of you get 100 Euro each. You can transfer any part of that amount to your co-player. According to the rules of the game, your co-player will receive the tripled amount of your transfer. Then, your co-player can transfer any part of his or her total amount back to you. You and your co-player cannot communicate or meet at any point during the game. After the game, your ways will part and you will never know who your co-player was. We would like to know the following: How much would you transfer to your co-player. (Values between 0 and 100 are allowed.)</dt>
+<dd>
+<p>I would transfer 50 Euro to my co-player.</p>
+</dd>
+<dt>How well does the following statement describe you as a person? As long as I am not convinced otherwise, I assume that people have only the best intentions. Please use a scale from 0 to 10, where 0 means does not describe me at all” and a 10 means describes me perfectly”. You can also use the values in-between to indicate where you fall on the scale.</dt>
+<dd>
+<p>9</p>
+</dd>
+</dl>
+<hr>
+</section>
+<section id="positive-reciprocity" class="level3">
+<h3 class="anchored" data-anchor-id="positive-reciprocity"><em>Positive reciprocity</em></h3>
+<dl>
+<dt>Please consider the following situation: You and another person, whom you do not know, both participate in a study where you can decide on how to assign a certain amount of money and thereby determine the outcome. The rules are as follows. Both participants get an account with 20 Euros. At the beginning, both participants thus own 20 Euros. The other person decides first. She can transfer money to your account. She can transfer any amount: 0, 1, 2 Euro, etc. up to 20 Euro. Each Euro that she transfers to you is tripled by the conductors of the study and booked to your account. After this first stage the other person therefore has 20 Euro minus the amount she transferred to you in her account. You have 20 Euro plus the tripled amount of the transfer of the other person on your account. Now you get to decide: you have the opportunity to transfer money back to the other person. You can transfer any amount up to 80 Euro, depending on how much you have in your account. This will be the end of the study and the account balances will be final. The other person has in her account 20 Euros minus the amount she transferred to you plus the amount you transferred back. You have 20 Euro plus the tripled amount of what the other person transferred to you minus the amount you transferred back to her. We would like to know how much you would choose to transfer back to the other person, for a given transfer of her to you. Suppose the other person transfers 5Euro to your account. After the first stage you then own 20+3*5= 35 Euro, the other person owns 20-5=15 Euro. What amount do you choose to transfer back?</dt>
+<dd>
+<p>I would choose to transfer 15 Euro back to the other person. This would leave me with 35-15=20 Euro and the other person with 15+15=30 Euro.</p>
+</dd>
+<dt>Please consider the following situation: You and another person, whom you do not know, both participate in a study where you can decide on how to assign a certain amount of money and thereby determine the outcome. The rules are as follows. Both participants get an account with 20 Euros. At the beginning, both participants thus own 20 Euros. The other person decides first. She can transfer money to your account. She can transfer any amount: 0, 1, 2 Euro, etc. up to 20 Euro. Each Euro that she transfers to you is tripled by the conductors of the study and booked to your account. After this first stage the other person therefore has 20 Euro minus the amount she transferred to you in her account. You have 20 Euro plus the tripled amount of the transfer of the other person on your account. Now you get to decide: you have the opportunity to transfer money back to the other person. You can transfer any amount up to 80 Euro, depending on how much you have in your account. This will be the end of the study and the account balances will be final. The other person has in her account 20 Euros minus the amount she transferred to you plus the amount you transferred back. You have 20 Euro plus the tripled amount of what the other person transferred to you minus the amount you transferred back to her. We would like to know how much you would choose to transfer back to the other person, for a given transfer of her to you. Suppose the other person transfers 5Euro to your account. After the first stage you then own 20+3*10 = 50 Euro, the other person owns 20-10 = 10 Euro. What amount do you choose to transfer back?</dt>
+<dd>
+<p>I would choose to transfer back 10 Euro to the other person. This would leave me with 40 Euro and the other person with 20 Euro.</p>
+</dd>
+<dt>Imagine the following situation: you are shopping in an unfamiliar city and realize you lost your way. You ask a stranger for directions. The stranger offers to take you with their car to your destination. The ride takes about 20 minutes and costs the stranger about 20 Euro in total. The stranger does not want money for it. You carry six bottles of wine with you. The cheapest bottle costs 5 Euro, the most expensive one 30 Euro. You decide to give one of the bottles to the stranger as a thank-you gift. Which bottle do you give? (choose from the following options: The bottle for 5, 10, 15, 20, 25, or 30 Euro)</dt>
+<dd>
+<p>The bottle for 20 Euro.</p>
+</dd>
+</dl>
+<hr>
+</section>
+<section id="negative-reciprocity" class="level3">
+<h3 class="anchored" data-anchor-id="negative-reciprocity"><em>Negative reciprocity</em></h3>
+<dl>
+<dt>Imagine the following situation: together with a person whom you do not know you won 100 Euro in a lottery. The rules stipulate the following: One of you has to make a proposal about how to divide the 100 Euro between you two. The other one gets to know the proposal and has to decide between two options. He or she can accept the proposal or reject it. If he or she accepts the proposal, the money is divided according to the proposal. If he or she rejects the proposal, both receive nothing. Assuming, the other person has to make a proposal about how to split the money, and you have to decide about whether to accept or reject the proposal. What is the minimum amount the other person has to offer you so that you are willing to accept it? (Values between 0 and 100 are allowed.)</dt>
+<dd>
+<p>The minimum amount the other person has to offer me would be 50 Euro.</p>
+</dd>
+<dt>How do you see yourself: Are you a person who is generally willing to punish unfair behavior even if this is costly? Please use a scale from 0 to 10, where 0 means you are not willing at all to incur costs to punish unfair behavior and a 10 means you are very willing to incur costs to punish unfair behavior. You can also use the values in-between to indicate where you fall on the scale</dt>
+<dd>
+<p>I would rate myself a 7 on this scale. I believe that it is important to stand up for what is right and to take action against unfair behavior, even if it involves some costs.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

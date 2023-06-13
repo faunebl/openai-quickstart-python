@@ -1,0 +1,3 @@
+
+API_KEY = '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'
+#'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'
