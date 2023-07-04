@@ -10,5 +10,94 @@ survey:
             type: unique
             prompt: "Imagine the following situation: you won 1,000 Euro in a lottery. Considering your current situation, how much would you donate to charity? Respond with a number only."
         altruism2:
-            type: scale
+            type: unique
             prompt: "How do you assess your willingness to share with others without expecting anything in return when it comes to charity? Please use a scale from 0 to 10, where 0 means you are completely unwilling to share and a 10 means you are very willing to share. You can also use the values inbetween to indicate where you fall on the scale. Please respond with a number only."
+        risk_aversion1:
+            type: unique
+            prompt: "How do you see yourself: are you a person who is generally willing to 
+            take risks, or do you try to avoid taking risks? Please use a scale from 0 
+            to 10, where a 0 means you are completely unwilling to take risks and
+            a 10 means you are very willing to take risks. You can also use the 
+            values in-between to indicate where you fall on the scale. Give the number only."
+        risk_aversion2:
+            type: scale
+            prompt: "Which would you choose : 
+          1) a lottery that yields 300 Euros with a 50 percent chance and 0 Euros with a 50 percent chance
+          2) 0 Euros 
+          Give only the number"
+        risk_aversion3:
+            type: scale
+            prompt: "Which would you choose : 
+          1) a lottery that yields 300 Euros with a 50 percent chance and 0 Euros with a 50 percent chance
+          2) 10 Euros 
+          Give only the number"
+        # risk_aversion4:
+        #     type: scale 
+        #     prompt:
+        #     amount: range(0,310,10)
+        time_discounting1:
+            type: unique 
+            prompt: "In comparison to others, are you a person who is generally willing to give 
+            up something today in order to benefit from that in the future or are you 
+            not willing to do so? Please use a scale from 0 to 10, where a 0 means you 
+            are completely unwilling to give up something today and a 10 means 
+            you are very willing to give up something today. You can also use the 
+            values in-between to indicate where you fall on the scale."
+        time_discounting2:
+            type: scale
+            prompt:
+        trust1:
+            type: unique
+            prompt: "Please consider the following situation: You participate in a game. This 
+            game has the following rules: First, you are assigned a co-player. You do 
+            not know your co-player, and you will never meet him or her. Both of 
+            you get 100 Euro each. You can transfer any part of that amount to your 
+            co-player. According to the rules of the game, your co-player will receive 
+            the tripled amount of your transfer. Then, your co-player can transfer 
+            any part of his or her total amount back to you. You and your co-player 
+            cannot communicate or meet at any point during the game. After the 
+            game, your ways will part and you will never know who your co-player 
+            was. We would like to know the following: How much would you transfer 
+            to your co-player. (Values between 0 and 100 are allowed.)"
+        trust2: 
+            type: unique
+            prompt: "How well does the following statement describe you as a person? As long 
+            as I am not convinced otherwise, I assume that people have only the best 
+            intentions. Please use a scale from 0 to 10, where 0 means does not 
+            describe me at all" and a 10 means describes me perfectly". You can 
+            also use the values in-between to indicate where you fall on the scale."
+        positive_reciprocity1:
+            type: scale 
+            prompt: 
+        positive_reciprocity2:
+            type: unique 
+            prompt: "Imagine the following situation: you are shopping in an unfamiliar city 
+            and realize you lost your way. You ask a stranger for directions. The 
+            stranger offers to take you with their car to your destination. The ride 
+            takes about 20 minutes and costs the stranger about 20 Euro in total. 
+            The stranger does not want money for it. You carry six bottles of wine 
+            with you. The cheapest bottle costs 5 Euro, the most expensive one 30 
+            Euro. You decide to give one of the bottles to the stranger as a thank-you 
+            gift. Which bottle do you give? 
+            (choose from the following options: The bottle for 5, 10, 15, 20, 25, or 30 Euro)"
+        negative_reciprocity1:
+            type: unique
+            prompt: "Imagine the following situation: together with a person whom you do not 
+            know you won 100 Euro in a lottery. The rules stipulate the following: 
+            One of you has to make a proposal about how to divide the 100 Euro 
+            between you two. The other one gets to know the proposal and has to 
+            decide between two options. He or she can accept the proposal or reject 
+            it. If he or she accepts the proposal, the money is divided according 
+            to the proposal. If he or she rejects the proposal, both receive nothing. 
+            Assuming, the other person has to make a proposal about how to split 
+            the money, and you have to decide about whether to accept or reject the 
+            proposal. What is the minimum amount the other person has to offer 
+            you so that you are willing to accept it? (Values between 0 and 100 are allowed.)"
+        negative_reciprocity2:
+            type: unique 
+            prompt: "How do you see yourself: Are you a person who is generally willing to 
+            punish unfair behavior even if this is costly? Please use a scale from 0 
+            to 10, where 0 means you are not willing at all to incur costs to punish 
+            unfair behavior and a 10 means you are very willing to incur costs 
+            to punish unfair behavior. You can also use the values in-between to 
+            indicate where you fall on the scale."
