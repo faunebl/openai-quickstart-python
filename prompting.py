@@ -3,8 +3,7 @@ import openai
 from dataclasses import dataclass
 # import json
 from api_secret import API_KEY
-# from prompting import Options
-# from prompting import Option
+
 
 openai.api_key = API_KEY
 
@@ -48,9 +47,10 @@ class UniqueQuestion(Question):
         super().__init__(prompt, name, options)
 
 class ScaleQuestion(Question):
-    def __init__(self, prompt: str, name: str, options: Options = Options()):
+    def __init__(self, prompt: str, name: str, start: float, stop: float, step: float, options: Options = Options()):
         super().__init__(prompt, name, options)
-    
+        self.amount = range(start, stop, step)
+
 class SimpleQuestion(Question):
     def __init__(self, prompt: str, options: Options = Options(n=1)):
         super().__init__(prompt, options)
