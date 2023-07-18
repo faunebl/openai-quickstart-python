@@ -9,9 +9,11 @@ survey:
         altruism1:
             type: unique
             prompt: "Imagine the following situation: you won 1,000 Euro in a lottery. Considering your current situation, how much would you donate to charity? Respond with a number only."
+            extraction: 'Numerical'
         altruism2:
             type: unique
             prompt: "How do you assess your willingness to share with others without expecting anything in return when it comes to charity? Please use a scale from 0 to 10, where 0 means you are completely unwilling to share and a 10 means you are very willing to share. You can also use the values inbetween to indicate where you fall on the scale. Please respond with a number only."
+            extraction: 'Numerical'
         risk_aversion1:
             type: unique
             prompt: "How do you see yourself: are you a person who is generally willing to 
@@ -19,22 +21,15 @@ survey:
             to 10, where a 0 means you are completely unwilling to take risks and
             a 10 means you are very willing to take risks. You can also use the 
             values in-between to indicate where you fall on the scale. Give the number only."
+            extraction: 'Numerical'
         risk_aversion2:
             type: scale
             prompt: "Which would you choose : 
           1) a lottery that yields 300 Euros with a 50 percent chance and 0 Euros with a 50 percent chance
-          2) 0 Euros 
+          2) $amount Euros 
           Give only the number"
-        risk_aversion3:
-            type: scale
-            prompt: "Which would you choose : 
-          1) a lottery that yields 300 Euros with a 50 percent chance and 0 Euros with a 50 percent chance
-          2) 10 Euros 
-          Give only the number"
-        # risk_aversion4:
-        #     type: scale 
-        #     prompt:
-        #     amount: range(0,310,10)
+            amount: "[range(0,310,10)]"
+            extraction: 'Numerical'
         time_discounting1:
             type: unique 
             prompt: "In comparison to others, are you a person who is generally willing to give 
@@ -43,9 +38,12 @@ survey:
             are completely unwilling to give up something today and a 10 means 
             you are very willing to give up something today. You can also use the 
             values in-between to indicate where you fall on the scale."
+            extraction: 'Numerical'
         time_discounting2:
             type: scale
-            prompt:
+            prompt: "Would you prefer receiving 100 Euros today or $amount Euros in 12 months ? Respond only by now or later"
+            amount: "[list([100.0,103.0,106.1,109.2,112.4,115.6,118.8,122.1,125.4,128.8,132.3,135.7,139.2, 142.8,146.4,150.1,153.8,157.5, 161.3,165.1,169.0,172.9,176.9,180.9,185])]"
+            extraction: 'Now or Later'
         trust1:
             type: unique
             prompt: "Please consider the following situation: You participate in a game. This 
@@ -59,16 +57,42 @@ survey:
             game, your ways will part and you will never know who your co-player 
             was. We would like to know the following: How much would you transfer 
             to your co-player. (Values between 0 and 100 are allowed.)"
+            extraction: 'Numerical'
         trust2: 
             type: unique
-            prompt: "How well does the following statement describe you as a person? As long 
+            prompt: "How well does the following statement describe you as a person? 'As long 
             as I am not convinced otherwise, I assume that people have only the best 
-            intentions. Please use a scale from 0 to 10, where 0 means does not 
-            describe me at all" and a 10 means describes me perfectly". You can 
+            intentions'. Please use a scale from 0 to 10, where 0 means does not 
+            describe me at all and a 10 means describes me perfectly. You can 
             also use the values in-between to indicate where you fall on the scale."
+            extraction: 'Numerical'
         positive_reciprocity1:
             type: scale 
-            prompt: 
+            prompt: "Please consider the following situation: You and another person, whom
+            you do not know, both participate in a study where you can decide on
+            how to assign a certain amount of money and thereby determine the
+            outcome. The rules are as follows. Both participants get an account with
+            20 Euros. At the beginning, both participants thus own 20 Euros. The
+            other person decides first. She can transfer money to your account. She
+            can transfer any amount: 0, 1, 2 Euro, etc. up to 20 Euro. Each Euro
+            that she transfers to you is tripled by the conductors of the study and
+            booked to your account. After this first stage the other person therefore
+            has 20 Euro minus the amount she transferred to you in her account. You
+            have 20 Euro plus the tripled amount of the transfer of the other person
+            on your account. Now you get to decide: you have the opportunity to
+            transfer money back to the other person. You can transfer any amount up
+            to 80 Euro, depending on how much you have in your account. This will
+            be the end of the study and the account balances will be final. The other
+            person has in her account 20 Euros minus the amount she transferred to
+            you plus the amount you transferred back. You have 20 Euro plus the
+            tripled amount of what the other person transferred to you minus the
+            amount you transferred back to her. We would like to know how much
+            you would choose to transfer back to the other person, for a given transfer
+            of her to you.
+            Suppose the other person transfers $amount Euro to your account.
+            What amount do you choose to transfer back?"
+            amount: "[range(5,25,5)]"
+            extraction: 'Numerical'
         positive_reciprocity2:
             type: unique 
             prompt: "Imagine the following situation: you are shopping in an unfamiliar city 
@@ -80,6 +104,7 @@ survey:
             Euro. You decide to give one of the bottles to the stranger as a thank-you 
             gift. Which bottle do you give? 
             (choose from the following options: The bottle for 5, 10, 15, 20, 25, or 30 Euro)"
+            extraction: 'Numerical'
         negative_reciprocity1:
             type: unique
             prompt: "Imagine the following situation: together with a person whom you do not 
@@ -93,6 +118,7 @@ survey:
             the money, and you have to decide about whether to accept or reject the 
             proposal. What is the minimum amount the other person has to offer 
             you so that you are willing to accept it? (Values between 0 and 100 are allowed.)"
+            extraction: 'Numerical'
         negative_reciprocity2:
             type: unique 
             prompt: "How do you see yourself: Are you a person who is generally willing to 
@@ -101,3 +127,4 @@ survey:
             unfair behavior and a 10 means you are very willing to incur costs 
             to punish unfair behavior. You can also use the values in-between to 
             indicate where you fall on the scale."
+            extraction: 'Numerical'

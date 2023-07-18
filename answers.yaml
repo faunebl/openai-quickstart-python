@@ -10,13 +10,141 @@ results:
 - answer: '
 
 
-    9'
+    8'
   prompt: How do you assess your willingness to share with others without expecting
     anything in return when it comes to charity? Please use a scale from 0 to 10,
     where 0 means you are completely unwilling to share and a 10 means you are very
     willing to share. You can also use the values inbetween to indicate where you
     fall on the scale. Please respond with a number only.
   question: altruism2
+- answer: '
+
+
+    7'
+  prompt: 'How do you see yourself: are you a person who is generally willing to take
+    risks, or do you try to avoid taking risks? Please use a scale from 0 to 10, where
+    a 0 means you are completely unwilling to take risks and a 10 means you are very
+    willing to take risks. You can also use the values in-between to indicate where
+    you fall on the scale. Give the number only.'
+  question: risk_aversion1
+- answer: '
+
+
+    300'
+  prompt: 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) $amount Euros Give only the number'
+  question: risk_aversion2
+- answer: '
+
+
+    I would rate myself an 8 on this scale. I''m generally willing to make sacrifices
+    now in order to reap the benefits in the future. I understand that delayed gratification
+    is often necessary for success, so I''m willing to make these sacrifices when
+    necessary.'
+  prompt: In comparison to others, are you a person who is generally willing to give
+    up something today in order to benefit from that in the future or are you not
+    willing to do so? Please use a scale from 0 to 10, where a 0 means you are completely
+    unwilling to give up something today and a 10 means you are very willing to give
+    up something today. You can also use the values in-between to indicate where you
+    fall on the scale.
+  question: time_discounting1
+- answer: '
+
+
+    Now.'
+  prompt: Would you prefer receiving 100 Euros today or $amount Euros in 12 months
+    ? Respond only by now or later
+  question: time_discounting2
+- answer: '
+
+
+    I would transfer 50 Euro to my co-player.'
+  prompt: 'Please consider the following situation: You participate in a game. This
+    game has the following rules: First, you are assigned a co-player. You do not
+    know your co-player, and you will never meet him or her. Both of you get 100 Euro
+    each. You can transfer any part of that amount to your co-player. According to
+    the rules of the game, your co-player will receive the tripled amount of your
+    transfer. Then, your co-player can transfer any part of his or her total amount
+    back to you. You and your co-player cannot communicate or meet at any point during
+    the game. After the game, your ways will part and you will never know who your
+    co-player was. We would like to know the following: How much would you transfer
+    to your co-player. (Values between 0 and 100 are allowed.)'
+  question: trust1
+- answer: '
+
+
+    7'
+  prompt: How well does the following statement describe you as a person? 'As long
+    as I am not convinced otherwise, I assume that people have only the best intentions'.
+    Please use a scale from 0 to 10, where 0 means does not describe me at all and
+    a 10 means describes me perfectly. You can also use the values in-between to indicate
+    where you fall on the scale.
+  question: trust2
+- answer: '
+
+
+    I would transfer back $amount Euro to the other person.'
+  prompt: 'Please consider the following situation: You and another person, whom you
+    do not know, both participate in a study where you can decide on how to assign
+    a certain amount of money and thereby determine the outcome. The rules are as
+    follows. Both participants get an account with 20 Euros. At the beginning, both
+    participants thus own 20 Euros. The other person decides first. She can transfer
+    money to your account. She can transfer any amount: 0, 1, 2 Euro, etc. up to 20
+    Euro. Each Euro that she transfers to you is tripled by the conductors of the
+    study and booked to your account. After this first stage the other person therefore
+    has 20 Euro minus the amount she transferred to you in her account. You have 20
+    Euro plus the tripled amount of the transfer of the other person on your account.
+    Now you get to decide: you have the opportunity to transfer money back to the
+    other person. You can transfer any amount up to 80 Euro, depending on how much
+    you have in your account. This will be the end of the study and the account balances
+    will be final. The other person has in her account 20 Euros minus the amount she
+    transferred to you plus the amount you transferred back. You have 20 Euro plus
+    the tripled amount of what the other person transferred to you minus the amount
+    you transferred back to her. We would like to know how much you would choose to
+    transfer back to the other person, for a given transfer of her to you. Suppose
+    the other person transfers $amount Euro to your account. What amount do you choose
+    to transfer back?'
+  question: positive_reciprocity1
+- answer: '
+
+
+    I would give the bottle for 20 Euro as a thank-you gift.'
+  prompt: 'Imagine the following situation: you are shopping in an unfamiliar city
+    and realize you lost your way. You ask a stranger for directions. The stranger
+    offers to take you with their car to your destination. The ride takes about 20
+    minutes and costs the stranger about 20 Euro in total. The stranger does not want
+    money for it. You carry six bottles of wine with you. The cheapest bottle costs
+    5 Euro, the most expensive one 30 Euro. You decide to give one of the bottles
+    to the stranger as a thank-you gift. Which bottle do you give? (choose from the
+    following options: The bottle for 5, 10, 15, 20, 25, or 30 Euro)'
+  question: positive_reciprocity2
+- answer: '
+
+
+    I would be willing to accept any proposal of at least 50 Euro.'
+  prompt: 'Imagine the following situation: together with a person whom you do not
+    know you won 100 Euro in a lottery. The rules stipulate the following: One of
+    you has to make a proposal about how to divide the 100 Euro between you two. The
+    other one gets to know the proposal and has to decide between two options. He
+    or she can accept the proposal or reject it. If he or she accepts the proposal,
+    the money is divided according to the proposal. If he or she rejects the proposal,
+    both receive nothing. Assuming, the other person has to make a proposal about
+    how to split the money, and you have to decide about whether to accept or reject
+    the proposal. What is the minimum amount the other person has to offer you so
+    that you are willing to accept it? (Values between 0 and 100 are allowed.)'
+  question: negative_reciprocity1
+- answer: '
+
+
+    I would rate myself an 8 on this scale. I am generally willing to take action
+    to punish unfair behavior, though I recognize that there may be personal costs
+    associated with this and I am mindful of those costs.'
+  prompt: 'How do you see yourself: Are you a person who is generally willing to punish
+    unfair behavior even if this is costly? Please use a scale from 0 to 10, where
+    0 means you are not willing at all to incur costs to punish unfair behavior and
+    a 10 means you are very willing to incur costs to punish unfair behavior. You
+    can also use the values in-between to indicate where you fall on the scale.'
+  question: negative_reciprocity2
 survey: !!python/object:prompting.Survey
   options: !!python/object:prompting.Options
     logprobs: 5
@@ -27,7 +155,7 @@ survey: !!python/object:prompting.Survey
   questions:
   - !!python/object:prompting.UniqueQuestion
     name: altruism1
-    options: !!python/object:prompting.Options
+    options: &id001 !!python/object:prompting.Options
       logprobs: 5
       max_tokens: 64
       model: text-davinci-003
@@ -36,16 +164,158 @@ survey: !!python/object:prompting.Survey
     prompt: 'Imagine the following situation: you won 1,000 Euro in a lottery. Considering
       your current situation, how much would you donate to charity? Respond with a
       number only.'
-  - !!python/object:prompting.ScaleQuestion
+  - !!python/object:prompting.UniqueQuestion
     name: altruism2
-    options: !!python/object:prompting.Options
-      logprobs: 5
-      max_tokens: 64
-      model: text-davinci-003
-      n: 1
-      temperature: 0.6
+    options: *id001
     prompt: How do you assess your willingness to share with others without expecting
       anything in return when it comes to charity? Please use a scale from 0 to 10,
       where 0 means you are completely unwilling to share and a 10 means you are very
       willing to share. You can also use the values inbetween to indicate where you
       fall on the scale. Please respond with a number only.
+  - !!python/object:prompting.UniqueQuestion
+    name: risk_aversion1
+    options: *id001
+    prompt: 'How do you see yourself: are you a person who is generally willing to
+      take risks, or do you try to avoid taking risks? Please use a scale from 0 to
+      10, where a 0 means you are completely unwilling to take risks and a 10 means
+      you are very willing to take risks. You can also use the values in-between to
+      indicate where you fall on the scale. Give the number only.'
+  - !!python/object:prompting.ScaleQuestion
+    amounts:
+    - !!python/object/apply:builtins.range
+      - 0
+      - 310
+      - 10
+    name: risk_aversion2
+    options: &id002 !!python/object:prompting.Options
+      logprobs: 5
+      max_tokens: 64
+      model: text-davinci-003
+      n: 1
+      temperature: 0.6
+    prompt: 'Which would you choose : 1) a lottery that yields 300 Euros with a 50
+      percent chance and 0 Euros with a 50 percent chance 2) $amount Euros Give only
+      the number'
+  - !!python/object:prompting.UniqueQuestion
+    name: time_discounting1
+    options: *id001
+    prompt: In comparison to others, are you a person who is generally willing to
+      give up something today in order to benefit from that in the future or are you
+      not willing to do so? Please use a scale from 0 to 10, where a 0 means you are
+      completely unwilling to give up something today and a 10 means you are very
+      willing to give up something today. You can also use the values in-between to
+      indicate where you fall on the scale.
+  - !!python/object:prompting.ScaleQuestion
+    amounts:
+    - - 100.0
+      - 103.0
+      - 106.1
+      - 109.2
+      - 112.4
+      - 115.6
+      - 118.8
+      - 122.1
+      - 125.4
+      - 128.8
+      - 132.3
+      - 135.7
+      - 139.2
+      - 142.8
+      - 146.4
+      - 150.1
+      - 153.8
+      - 157.5
+      - 161.3
+      - 165.1
+      - 169.0
+      - 172.9
+      - 176.9
+      - 180.9
+      - 185
+    name: time_discounting2
+    options: *id002
+    prompt: Would you prefer receiving 100 Euros today or $amount Euros in 12 months
+      ? Respond only by now or later
+  - !!python/object:prompting.UniqueQuestion
+    name: trust1
+    options: *id001
+    prompt: 'Please consider the following situation: You participate in a game. This
+      game has the following rules: First, you are assigned a co-player. You do not
+      know your co-player, and you will never meet him or her. Both of you get 100
+      Euro each. You can transfer any part of that amount to your co-player. According
+      to the rules of the game, your co-player will receive the tripled amount of
+      your transfer. Then, your co-player can transfer any part of his or her total
+      amount back to you. You and your co-player cannot communicate or meet at any
+      point during the game. After the game, your ways will part and you will never
+      know who your co-player was. We would like to know the following: How much would
+      you transfer to your co-player. (Values between 0 and 100 are allowed.)'
+  - !!python/object:prompting.UniqueQuestion
+    name: trust2
+    options: *id001
+    prompt: How well does the following statement describe you as a person? 'As long
+      as I am not convinced otherwise, I assume that people have only the best intentions'.
+      Please use a scale from 0 to 10, where 0 means does not describe me at all and
+      a 10 means describes me perfectly. You can also use the values in-between to
+      indicate where you fall on the scale.
+  - !!python/object:prompting.ScaleQuestion
+    amounts:
+    - !!python/object/apply:builtins.range
+      - 5
+      - 25
+      - 5
+    name: positive_reciprocity1
+    options: *id002
+    prompt: 'Please consider the following situation: You and another person, whom
+      you do not know, both participate in a study where you can decide on how to
+      assign a certain amount of money and thereby determine the outcome. The rules
+      are as follows. Both participants get an account with 20 Euros. At the beginning,
+      both participants thus own 20 Euros. The other person decides first. She can
+      transfer money to your account. She can transfer any amount: 0, 1, 2 Euro, etc.
+      up to 20 Euro. Each Euro that she transfers to you is tripled by the conductors
+      of the study and booked to your account. After this first stage the other person
+      therefore has 20 Euro minus the amount she transferred to you in her account.
+      You have 20 Euro plus the tripled amount of the transfer of the other person
+      on your account. Now you get to decide: you have the opportunity to transfer
+      money back to the other person. You can transfer any amount up to 80 Euro, depending
+      on how much you have in your account. This will be the end of the study and
+      the account balances will be final. The other person has in her account 20 Euros
+      minus the amount she transferred to you plus the amount you transferred back.
+      You have 20 Euro plus the tripled amount of what the other person transferred
+      to you minus the amount you transferred back to her. We would like to know how
+      much you would choose to transfer back to the other person, for a given transfer
+      of her to you. Suppose the other person transfers $amount Euro to your account.
+      What amount do you choose to transfer back?'
+  - !!python/object:prompting.UniqueQuestion
+    name: positive_reciprocity2
+    options: *id001
+    prompt: 'Imagine the following situation: you are shopping in an unfamiliar city
+      and realize you lost your way. You ask a stranger for directions. The stranger
+      offers to take you with their car to your destination. The ride takes about
+      20 minutes and costs the stranger about 20 Euro in total. The stranger does
+      not want money for it. You carry six bottles of wine with you. The cheapest
+      bottle costs 5 Euro, the most expensive one 30 Euro. You decide to give one
+      of the bottles to the stranger as a thank-you gift. Which bottle do you give?
+      (choose from the following options: The bottle for 5, 10, 15, 20, 25, or 30
+      Euro)'
+  - !!python/object:prompting.UniqueQuestion
+    name: negative_reciprocity1
+    options: *id001
+    prompt: 'Imagine the following situation: together with a person whom you do not
+      know you won 100 Euro in a lottery. The rules stipulate the following: One of
+      you has to make a proposal about how to divide the 100 Euro between you two.
+      The other one gets to know the proposal and has to decide between two options.
+      He or she can accept the proposal or reject it. If he or she accepts the proposal,
+      the money is divided according to the proposal. If he or she rejects the proposal,
+      both receive nothing. Assuming, the other person has to make a proposal about
+      how to split the money, and you have to decide about whether to accept or reject
+      the proposal. What is the minimum amount the other person has to offer you so
+      that you are willing to accept it? (Values between 0 and 100 are allowed.)'
+  - !!python/object:prompting.UniqueQuestion
+    name: negative_reciprocity2
+    options: *id001
+    prompt: 'How do you see yourself: Are you a person who is generally willing to
+      punish unfair behavior even if this is costly? Please use a scale from 0 to
+      10, where 0 means you are not willing at all to incur costs to punish unfair
+      behavior and a 10 means you are very willing to incur costs to punish unfair
+      behavior. You can also use the values in-between to indicate where you fall
+      on the scale.'
