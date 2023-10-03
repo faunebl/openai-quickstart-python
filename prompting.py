@@ -3,6 +3,7 @@ import re
 from dataclasses import dataclass
 from string import Template
 from api_secret import API_KEY
+from tqdm import tqdm
 
 
 openai.api_key = API_KEY
@@ -12,7 +13,7 @@ class Options:
     temperature: float= 0.6 
     max_tokens: int=64
     model: str="text-davinci-003"
-    n: int=1
+    n: int=3
     logprobs: int=5
 
 class Question:
@@ -109,11 +110,11 @@ class ScaleQuestion(Question):
 @dataclass
 class Survey:
     questions: list[Question]  
-    options: Options = Options()
+    options: Options = Options(n=3)
 
     def run(self):
         results = []
-        for i in self.questions:
+        for i in tqdm(self.questions, desc='survey'):
             try: 
                 i.get_answers(i.get_question_list())
             except Exception as e:

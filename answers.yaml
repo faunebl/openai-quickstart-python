@@ -4,8 +4,8 @@ results:
 
     100'
   prompt: 'Imagine the following situation: you won 1,000 Euro in a lottery. Considering
-    your current situation, how much would you donate to charity? Respond with a number
-    only.'
+    your current situation, how much would you donate to charity? (Please respond
+    with a number only).'
   question: altruism1
 - answer: '
 
@@ -27,20 +27,199 @@ results:
     willing to take risks. You can also use the values in-between to indicate where
     you fall on the scale. Give the number only.'
   question: risk_aversion1
-- answer: '
+- answer: &id002
+  - ' of your choice
 
 
-    300'
-  prompt: 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
-    chance and 0 Euros with a 50 percent chance 2) $amount Euros Give only the number'
+    1'
+  - '
+
+
+    1'
+  - '
+
+
+    1'
+  - ' of your choice
+
+
+    1'
+  - '
+
+
+    1'
+  - '
+
+
+    1'
+  - ' of the option you would choose
+
+
+    1'
+  - '
+
+
+    1'
+  - '
+
+
+    1'
+  - '
+
+
+    1'
+  - '
+
+
+    1'
+  - ' of the answer
+
+
+    1'
+  - '
+
+
+    1'
+  - ' of your choice
+
+
+    1'
+  - '
+
+
+    1'
+  - ' of your choice
+
+
+    1'
+  - '
+
+
+    1'
+  - '
+
+
+    1'
+  - '
+
+
+    1'
+  - '.
+
+
+    1'
+  - '
+
+
+    1'
+  - '
+
+
+    1'
+  - ' of your choice
+
+
+    1'
+  - '
+
+
+    1'
+  - '
+
+
+    1'
+  - '
+
+
+    1'
+  - ' of your choice
+
+
+    1'
+  - ' of your choice
+
+
+    1'
+  - ' corresponding to your choice
+
+
+    1'
+  - '
+
+
+    1'
+  - '
+
+
+    1'
+  prompt: &id003
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 0 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 10 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 20 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 30 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 40 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 50 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 60 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 70 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 80 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 90 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 100 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 110 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 120 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 130 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 140 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 150 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 160 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 170 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 180 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 190 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 200 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 210 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 220 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 230 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 240 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 250 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 260 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 270 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 280 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 290 Euros Give only the number'
+  - 'Which would you choose : 1) a lottery that yields 300 Euros with a 50 percent
+    chance and 0 Euros with a 50 percent chance 2) 300 Euros Give only the number'
   question: risk_aversion2
 - answer: '
 
 
-    I would rate myself an 8 on this scale. I''m generally willing to make sacrifices
-    now in order to reap the benefits in the future. I understand that delayed gratification
-    is often necessary for success, so I''m willing to make these sacrifices when
-    necessary.'
+    8'
   prompt: In comparison to others, are you a person who is generally willing to give
     up something today in order to benefit from that in the future or are you not
     willing to do so? Please use a scale from 0 to 10, where a 0 means you are completely
@@ -48,17 +227,163 @@ results:
     up something today. You can also use the values in-between to indicate where you
     fall on the scale.
   question: time_discounting1
-- answer: '
+- answer: &id004
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
 
 
     Now.'
-  prompt: Would you prefer receiving 100 Euros today or $amount Euros in 12 months
-    ? Respond only by now or later
+  - '
+
+
+    Now'
+  - '
+
+
+    Now.'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now.'
+  - '
+
+
+    Now'
+  - '
+
+
+    Later'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
+
+
+    Now'
+  - '
+
+
+    Later.'
+  - '
+
+
+    Now'
+  - '
+
+
+    Later'
+  - '
+
+
+    Later'
+  prompt: &id006
+  - Would you prefer receiving 100 Euros today or 100.0 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 103.0 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 106.1 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 109.2 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 112.4 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 115.6 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 118.8 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 122.1 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 125.4 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 128.8 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 132.3 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 135.7 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 139.2 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 142.8 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 146.4 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 150.1 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 153.8 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 157.5 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 161.3 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 165.1 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 169.0 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 172.9 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 176.9 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 180.9 Euros in 12 months ? Respond
+    only by now or later
+  - Would you prefer receiving 100 Euros today or 185 Euros in 12 months ? Respond
+    only by now or later
   question: time_discounting2
 - answer: '
 
 
-    I would transfer 50 Euro to my co-player.'
+    I would transfer 30 Euro to my co-player.'
   prompt: 'Please consider the following situation: You participate in a game. This
     game has the following rules: First, you are assigned a co-player. You do not
     know your co-player, and you will never meet him or her. Both of you get 100 Euro
@@ -68,47 +393,127 @@ results:
     back to you. You and your co-player cannot communicate or meet at any point during
     the game. After the game, your ways will part and you will never know who your
     co-player was. We would like to know the following: How much would you transfer
-    to your co-player. (Values between 0 and 100 are allowed.)'
+    to your co-player. (Please respond with a number only.)'
   question: trust1
 - answer: '
 
 
-    7'
+    8'
   prompt: How well does the following statement describe you as a person? 'As long
     as I am not convinced otherwise, I assume that people have only the best intentions'.
     Please use a scale from 0 to 10, where 0 means does not describe me at all and
     a 10 means describes me perfectly. You can also use the values in-between to indicate
     where you fall on the scale.
   question: trust2
-- answer: '
+- answer: &id007
+  - '
 
 
-    I would transfer back $amount Euro to the other person.'
-  prompt: 'Please consider the following situation: You and another person, whom you
-    do not know, both participate in a study where you can decide on how to assign
-    a certain amount of money and thereby determine the outcome. The rules are as
-    follows. Both participants get an account with 20 Euros. At the beginning, both
-    participants thus own 20 Euros. The other person decides first. She can transfer
-    money to your account. She can transfer any amount: 0, 1, 2 Euro, etc. up to 20
-    Euro. Each Euro that she transfers to you is tripled by the conductors of the
-    study and booked to your account. After this first stage the other person therefore
-    has 20 Euro minus the amount she transferred to you in her account. You have 20
-    Euro plus the tripled amount of the transfer of the other person on your account.
-    Now you get to decide: you have the opportunity to transfer money back to the
-    other person. You can transfer any amount up to 80 Euro, depending on how much
-    you have in your account. This will be the end of the study and the account balances
-    will be final. The other person has in her account 20 Euros minus the amount she
-    transferred to you plus the amount you transferred back. You have 20 Euro plus
-    the tripled amount of what the other person transferred to you minus the amount
-    you transferred back to her. We would like to know how much you would choose to
-    transfer back to the other person, for a given transfer of her to you. Suppose
-    the other person transfers $amount Euro to your account. What amount do you choose
-    to transfer back?'
+    I would choose to transfer back 15 Euro.'
+  - '
+
+
+    I would choose to transfer back 10 Euro. This would mean that the other person
+    would have 20 Euro minus 10 Euro transferred to me, plus 10 Euro transferred back
+    from me. I would have 20 Euro plus 30 Euro (tripled amount of 10 Euro transferred
+    to me) minus 10 Euro transferred back to her.'
+  - '
+
+
+    In this situation, I would choose to transfer back 5 Euro to the other person.
+    This would leave me with 45 Euro (20 Euro + 3 x 15 Euro - 5 Euro), and the other
+    person would have 25 Euro (20 Euro - 15 Euro + 5 Euro).'
+  - '
+
+
+    I would choose to transfer back 6 Euro. This would give the other person a total
+    of 34 Euro (20 Euro transferred to me, tripled to 60 Euro, minus 6 Euro transferred
+    back to her), and I would have 74 Euro (20 Euro plus 60 Euro transferred from
+    her, minus 6 Euro transferred back to'
+  prompt: &id008
+  - 'Please consider the following situation: You and another person, whom you do
+    not know, both participate in a study where you can decide on how to assign a
+    certain amount of money and thereby determine the outcome. The rules are as follows.
+    Both participants get an account with 20 Euros. At the beginning, both participants
+    thus own 20 Euros. The other person decides first. She can transfer money to your
+    account. She can transfer any amount: 0, 1, 2 Euro, etc. up to 20 Euro. Each Euro
+    that she transfers to you is tripled by the conductors of the study and booked
+    to your account. After this first stage the other person therefore has 20 Euro
+    minus the amount she transferred to you in her account. You have 20 Euro plus
+    the tripled amount of the transfer of the other person on your account. Now you
+    get to decide: you have the opportunity to transfer money back to the other person.
+    You can transfer any amount up to 80 Euro, depending on how much you have in your
+    account. This will be the end of the study and the account balances will be final.
+    The other person has in her account 20 Euros minus the amount she transferred
+    to you plus the amount you transferred back. You have 20 Euro plus the tripled
+    amount of what the other person transferred to you minus the amount you transferred
+    back to her. We would like to know how much you would choose to transfer back
+    to the other person, for a given transfer of her to you. Suppose the other person
+    transfers 5 Euro to your account. What amount do you choose to transfer back?'
+  - 'Please consider the following situation: You and another person, whom you do
+    not know, both participate in a study where you can decide on how to assign a
+    certain amount of money and thereby determine the outcome. The rules are as follows.
+    Both participants get an account with 20 Euros. At the beginning, both participants
+    thus own 20 Euros. The other person decides first. She can transfer money to your
+    account. She can transfer any amount: 0, 1, 2 Euro, etc. up to 20 Euro. Each Euro
+    that she transfers to you is tripled by the conductors of the study and booked
+    to your account. After this first stage the other person therefore has 20 Euro
+    minus the amount she transferred to you in her account. You have 20 Euro plus
+    the tripled amount of the transfer of the other person on your account. Now you
+    get to decide: you have the opportunity to transfer money back to the other person.
+    You can transfer any amount up to 80 Euro, depending on how much you have in your
+    account. This will be the end of the study and the account balances will be final.
+    The other person has in her account 20 Euros minus the amount she transferred
+    to you plus the amount you transferred back. You have 20 Euro plus the tripled
+    amount of what the other person transferred to you minus the amount you transferred
+    back to her. We would like to know how much you would choose to transfer back
+    to the other person, for a given transfer of her to you. Suppose the other person
+    transfers 10 Euro to your account. What amount do you choose to transfer back?'
+  - 'Please consider the following situation: You and another person, whom you do
+    not know, both participate in a study where you can decide on how to assign a
+    certain amount of money and thereby determine the outcome. The rules are as follows.
+    Both participants get an account with 20 Euros. At the beginning, both participants
+    thus own 20 Euros. The other person decides first. She can transfer money to your
+    account. She can transfer any amount: 0, 1, 2 Euro, etc. up to 20 Euro. Each Euro
+    that she transfers to you is tripled by the conductors of the study and booked
+    to your account. After this first stage the other person therefore has 20 Euro
+    minus the amount she transferred to you in her account. You have 20 Euro plus
+    the tripled amount of the transfer of the other person on your account. Now you
+    get to decide: you have the opportunity to transfer money back to the other person.
+    You can transfer any amount up to 80 Euro, depending on how much you have in your
+    account. This will be the end of the study and the account balances will be final.
+    The other person has in her account 20 Euros minus the amount she transferred
+    to you plus the amount you transferred back. You have 20 Euro plus the tripled
+    amount of what the other person transferred to you minus the amount you transferred
+    back to her. We would like to know how much you would choose to transfer back
+    to the other person, for a given transfer of her to you. Suppose the other person
+    transfers 15 Euro to your account. What amount do you choose to transfer back?'
+  - 'Please consider the following situation: You and another person, whom you do
+    not know, both participate in a study where you can decide on how to assign a
+    certain amount of money and thereby determine the outcome. The rules are as follows.
+    Both participants get an account with 20 Euros. At the beginning, both participants
+    thus own 20 Euros. The other person decides first. She can transfer money to your
+    account. She can transfer any amount: 0, 1, 2 Euro, etc. up to 20 Euro. Each Euro
+    that she transfers to you is tripled by the conductors of the study and booked
+    to your account. After this first stage the other person therefore has 20 Euro
+    minus the amount she transferred to you in her account. You have 20 Euro plus
+    the tripled amount of the transfer of the other person on your account. Now you
+    get to decide: you have the opportunity to transfer money back to the other person.
+    You can transfer any amount up to 80 Euro, depending on how much you have in your
+    account. This will be the end of the study and the account balances will be final.
+    The other person has in her account 20 Euros minus the amount she transferred
+    to you plus the amount you transferred back. You have 20 Euro plus the tripled
+    amount of what the other person transferred to you minus the amount you transferred
+    back to her. We would like to know how much you would choose to transfer back
+    to the other person, for a given transfer of her to you. Suppose the other person
+    transfers 20 Euro to your account. What amount do you choose to transfer back?'
   question: positive_reciprocity1
 - answer: '
 
 
-    I would give the bottle for 20 Euro as a thank-you gift.'
+    I would give the bottle for 20 Euro. This is a nice gesture to show your appreciation
+    for the stranger''s kindness, and 20 Euro is a good amount to show your gratitude
+    without being overly generous.'
   prompt: 'Imagine the following situation: you are shopping in an unfamiliar city
     and realize you lost your way. You ask a stranger for directions. The stranger
     offers to take you with their car to your destination. The ride takes about 20
@@ -121,7 +526,7 @@ results:
 - answer: '
 
 
-    I would be willing to accept any proposal of at least 50 Euro.'
+    The minimum amount I would be willing to accept is 50 Euro.'
   prompt: 'Imagine the following situation: together with a person whom you do not
     know you won 100 Euro in a lottery. The rules stipulate the following: One of
     you has to make a proposal about how to divide the 100 Euro between you two. The
@@ -136,9 +541,8 @@ results:
 - answer: '
 
 
-    I would rate myself an 8 on this scale. I am generally willing to take action
-    to punish unfair behavior, though I recognize that there may be personal costs
-    associated with this and I am mindful of those costs.'
+    I would rate myself a 7. I believe in fairness and justice, and am willing to
+    take a stand against unfair behavior even if it is costly.'
   prompt: 'How do you see yourself: Are you a person who is generally willing to punish
     unfair behavior even if this is costly? Please use a scale from 0 to 10, where
     0 means you are not willing at all to incur costs to punish unfair behavior and
@@ -150,21 +554,30 @@ survey: !!python/object:prompting.Survey
     logprobs: 5
     max_tokens: 64
     model: text-davinci-003
-    n: 1
+    n: 3
     temperature: 0.6
   questions:
   - !!python/object:prompting.UniqueQuestion
+    answer: '
+
+
+      100'
     name: altruism1
     options: &id001 !!python/object:prompting.Options
       logprobs: 5
       max_tokens: 64
       model: text-davinci-003
-      n: 1
+      n: 3
       temperature: 0.6
     prompt: 'Imagine the following situation: you won 1,000 Euro in a lottery. Considering
-      your current situation, how much would you donate to charity? Respond with a
-      number only.'
+      your current situation, how much would you donate to charity? (Please respond
+      with a number only).'
+    type: Numerical
   - !!python/object:prompting.UniqueQuestion
+    answer: '
+
+
+      8'
     name: altruism2
     options: *id001
     prompt: How do you assess your willingness to share with others without expecting
@@ -172,7 +585,12 @@ survey: !!python/object:prompting.Survey
       where 0 means you are completely unwilling to share and a 10 means you are very
       willing to share. You can also use the values inbetween to indicate where you
       fall on the scale. Please respond with a number only.
+    type: Numerical
   - !!python/object:prompting.UniqueQuestion
+    answer: '
+
+
+      7'
     name: risk_aversion1
     options: *id001
     prompt: 'How do you see yourself: are you a person who is generally willing to
@@ -180,23 +598,55 @@ survey: !!python/object:prompting.Survey
       10, where a 0 means you are completely unwilling to take risks and a 10 means
       you are very willing to take risks. You can also use the values in-between to
       indicate where you fall on the scale. Give the number only.'
+    type: Numerical
   - !!python/object:prompting.ScaleQuestion
     amounts:
-    - !!python/object/apply:builtins.range
-      - 0
-      - 310
-      - 10
+    - 0
+    - 10
+    - 20
+    - 30
+    - 40
+    - 50
+    - 60
+    - 70
+    - 80
+    - 90
+    - 100
+    - 110
+    - 120
+    - 130
+    - 140
+    - 150
+    - 160
+    - 170
+    - 180
+    - 190
+    - 200
+    - 210
+    - 220
+    - 230
+    - 240
+    - 250
+    - 260
+    - 270
+    - 280
+    - 290
+    - 300
+    answer: *id002
     name: risk_aversion2
-    options: &id002 !!python/object:prompting.Options
+    options: &id005 !!python/object:prompting.Options
       logprobs: 5
       max_tokens: 64
       model: text-davinci-003
-      n: 1
+      n: 3
       temperature: 0.6
-    prompt: 'Which would you choose : 1) a lottery that yields 300 Euros with a 50
-      percent chance and 0 Euros with a 50 percent chance 2) $amount Euros Give only
-      the number'
+    prompt: *id003
+    type: Numerical
   - !!python/object:prompting.UniqueQuestion
+    answer: '
+
+
+      8'
     name: time_discounting1
     options: *id001
     prompt: In comparison to others, are you a person who is generally willing to
@@ -205,38 +655,44 @@ survey: !!python/object:prompting.Survey
       completely unwilling to give up something today and a 10 means you are very
       willing to give up something today. You can also use the values in-between to
       indicate where you fall on the scale.
+    type: Numerical
   - !!python/object:prompting.ScaleQuestion
     amounts:
-    - - 100.0
-      - 103.0
-      - 106.1
-      - 109.2
-      - 112.4
-      - 115.6
-      - 118.8
-      - 122.1
-      - 125.4
-      - 128.8
-      - 132.3
-      - 135.7
-      - 139.2
-      - 142.8
-      - 146.4
-      - 150.1
-      - 153.8
-      - 157.5
-      - 161.3
-      - 165.1
-      - 169.0
-      - 172.9
-      - 176.9
-      - 180.9
-      - 185
+    - 100.0
+    - 103.0
+    - 106.1
+    - 109.2
+    - 112.4
+    - 115.6
+    - 118.8
+    - 122.1
+    - 125.4
+    - 128.8
+    - 132.3
+    - 135.7
+    - 139.2
+    - 142.8
+    - 146.4
+    - 150.1
+    - 153.8
+    - 157.5
+    - 161.3
+    - 165.1
+    - 169.0
+    - 172.9
+    - 176.9
+    - 180.9
+    - 185
+    answer: *id004
     name: time_discounting2
-    options: *id002
-    prompt: Would you prefer receiving 100 Euros today or $amount Euros in 12 months
-      ? Respond only by now or later
+    options: *id005
+    prompt: *id006
+    type: Now or Later
   - !!python/object:prompting.UniqueQuestion
+    answer: '
+
+
+      I would transfer 30 Euro to my co-player.'
     name: trust1
     options: *id001
     prompt: 'Please consider the following situation: You participate in a game. This
@@ -248,8 +704,13 @@ survey: !!python/object:prompting.Survey
       amount back to you. You and your co-player cannot communicate or meet at any
       point during the game. After the game, your ways will part and you will never
       know who your co-player was. We would like to know the following: How much would
-      you transfer to your co-player. (Values between 0 and 100 are allowed.)'
+      you transfer to your co-player. (Please respond with a number only.)'
+    type: Numerical
   - !!python/object:prompting.UniqueQuestion
+    answer: '
+
+
+      8'
     name: trust2
     options: *id001
     prompt: How well does the following statement describe you as a person? 'As long
@@ -257,35 +718,25 @@ survey: !!python/object:prompting.Survey
       Please use a scale from 0 to 10, where 0 means does not describe me at all and
       a 10 means describes me perfectly. You can also use the values in-between to
       indicate where you fall on the scale.
+    type: Numerical
   - !!python/object:prompting.ScaleQuestion
     amounts:
-    - !!python/object/apply:builtins.range
-      - 5
-      - 25
-      - 5
+    - 5
+    - 10
+    - 15
+    - 20
+    answer: *id007
     name: positive_reciprocity1
-    options: *id002
-    prompt: 'Please consider the following situation: You and another person, whom
-      you do not know, both participate in a study where you can decide on how to
-      assign a certain amount of money and thereby determine the outcome. The rules
-      are as follows. Both participants get an account with 20 Euros. At the beginning,
-      both participants thus own 20 Euros. The other person decides first. She can
-      transfer money to your account. She can transfer any amount: 0, 1, 2 Euro, etc.
-      up to 20 Euro. Each Euro that she transfers to you is tripled by the conductors
-      of the study and booked to your account. After this first stage the other person
-      therefore has 20 Euro minus the amount she transferred to you in her account.
-      You have 20 Euro plus the tripled amount of the transfer of the other person
-      on your account. Now you get to decide: you have the opportunity to transfer
-      money back to the other person. You can transfer any amount up to 80 Euro, depending
-      on how much you have in your account. This will be the end of the study and
-      the account balances will be final. The other person has in her account 20 Euros
-      minus the amount she transferred to you plus the amount you transferred back.
-      You have 20 Euro plus the tripled amount of what the other person transferred
-      to you minus the amount you transferred back to her. We would like to know how
-      much you would choose to transfer back to the other person, for a given transfer
-      of her to you. Suppose the other person transfers $amount Euro to your account.
-      What amount do you choose to transfer back?'
+    options: *id005
+    prompt: *id008
+    type: Numerical
   - !!python/object:prompting.UniqueQuestion
+    answer: '
+
+
+      I would give the bottle for 20 Euro. This is a nice gesture to show your appreciation
+      for the stranger''s kindness, and 20 Euro is a good amount to show your gratitude
+      without being overly generous.'
     name: positive_reciprocity2
     options: *id001
     prompt: 'Imagine the following situation: you are shopping in an unfamiliar city
@@ -297,7 +748,12 @@ survey: !!python/object:prompting.Survey
       of the bottles to the stranger as a thank-you gift. Which bottle do you give?
       (choose from the following options: The bottle for 5, 10, 15, 20, 25, or 30
       Euro)'
+    type: Numerical
   - !!python/object:prompting.UniqueQuestion
+    answer: '
+
+
+      The minimum amount I would be willing to accept is 50 Euro.'
     name: negative_reciprocity1
     options: *id001
     prompt: 'Imagine the following situation: together with a person whom you do not
@@ -310,7 +766,13 @@ survey: !!python/object:prompting.Survey
       how to split the money, and you have to decide about whether to accept or reject
       the proposal. What is the minimum amount the other person has to offer you so
       that you are willing to accept it? (Values between 0 and 100 are allowed.)'
+    type: Numerical
   - !!python/object:prompting.UniqueQuestion
+    answer: '
+
+
+      I would rate myself a 7. I believe in fairness and justice, and am willing to
+      take a stand against unfair behavior even if it is costly.'
     name: negative_reciprocity2
     options: *id001
     prompt: 'How do you see yourself: Are you a person who is generally willing to
@@ -319,3 +781,4 @@ survey: !!python/object:prompting.Survey
       behavior and a 10 means you are very willing to incur costs to punish unfair
       behavior. You can also use the values in-between to indicate where you fall
       on the scale.'
+    type: Numerical

@@ -8,7 +8,7 @@ survey:
     questions:
         altruism1:
             type: unique
-            prompt: "Imagine the following situation: you won 1,000 Euro in a lottery. Considering your current situation, how much would you donate to charity? Respond with a number only."
+            prompt: "Imagine the following situation: you won 1,000 Euro in a lottery. Considering your current situation, how much would you donate to charity? (Please respond with a number only)."
             extraction: 'Numerical'
         altruism2:
             type: unique
@@ -28,7 +28,7 @@ survey:
           1) a lottery that yields 300 Euros with a 50 percent chance and 0 Euros with a 50 percent chance
           2) $amount Euros 
           Give only the number"
-            amount: "[range(0,310,10)]"
+            amount: "[*range(0,310,10)]"
             extraction: 'Numerical'
         time_discounting1:
             type: unique 
@@ -42,7 +42,7 @@ survey:
         time_discounting2:
             type: scale
             prompt: "Would you prefer receiving 100 Euros today or $amount Euros in 12 months ? Respond only by now or later"
-            amount: "[list([100.0,103.0,106.1,109.2,112.4,115.6,118.8,122.1,125.4,128.8,132.3,135.7,139.2, 142.8,146.4,150.1,153.8,157.5, 161.3,165.1,169.0,172.9,176.9,180.9,185])]"
+            amount: "[100.0,103.0,106.1,109.2,112.4,115.6,118.8,122.1,125.4,128.8,132.3,135.7,139.2, 142.8,146.4,150.1,153.8,157.5, 161.3,165.1,169.0,172.9,176.9,180.9,185]"
             extraction: 'Now or Later'
         trust1:
             type: unique
@@ -56,7 +56,7 @@ survey:
             cannot communicate or meet at any point during the game. After the 
             game, your ways will part and you will never know who your co-player 
             was. We would like to know the following: How much would you transfer 
-            to your co-player. (Values between 0 and 100 are allowed.)"
+            to your co-player. (Please respond with a number only.)"
             extraction: 'Numerical'
         trust2: 
             type: unique
@@ -91,7 +91,7 @@ survey:
             of her to you.
             Suppose the other person transfers $amount Euro to your account.
             What amount do you choose to transfer back?"
-            amount: "[range(5,25,5)]"
+            amount: "[*range(5,25,5)]"
             extraction: 'Numerical'
         positive_reciprocity2:
             type: unique 
